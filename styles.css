@@ -46,6 +46,7 @@ a {
   text-decoration: none;
 }
 address {
+  margin-right: 70px;
   font-style: normal;
 }
 img {
@@ -362,6 +363,41 @@ button {
 .address-link.map:focus {
   color: var(--accent-color);
 }
+.title-links {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+.adr-lnk {
+  display: flex;
+  align-items: baseline;
+}
+
+.adr-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.address-icon {
+  fill: var(--secondary-text-color);
+}
+.adr-link:hover,
+.adr-link:focus {
+  background-color: var(--accent-color);
+}
+
+.address-links {
+  display: flex;
+  gap: 10px;
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -399,6 +435,14 @@ button {
 .filter-button:focus {
   color: var(--secondary-text-color);
   background: var(--accent-color);
+}
+.item-example {
+  display: block;
+}
+.item-example:hover,
+.item-example:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .caption {
   border: 1px solid var(--line-color);
