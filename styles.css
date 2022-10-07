@@ -46,7 +46,6 @@ a {
   text-decoration: none;
 }
 address {
-  margin-right: 70px;
   font-style: normal;
 }
 img {
@@ -160,8 +159,6 @@ button {
   color: var(--accent-color);
 }
 .section-hero {
-  display: flex;
-  align-items: center;
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -170,7 +167,8 @@ button {
   background-size: cover;
   background-position: center;
   text-align: center;
-  justify-content: center;
+  padding: 200px 0;
+  margin: 0 auto;
   background-color: var(--background-color-hero);
 }
 .button.hero {
@@ -209,8 +207,8 @@ button {
   width: 270px;
 }
 .section-adv {
-  padding-top: 92.8px;
-  padding-bottom: 92.8px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section.doing {
   padding-top: 0;
@@ -403,6 +401,9 @@ button {
   padding-bottom: 60px;
   background-color: var(--background-footer-color);
 }
+.footer-adr {
+  margin-right: 70px;
+}
 /* Портфоліо */
 .filter {
   display: flex;
@@ -435,6 +436,8 @@ button {
 .filter-button:focus {
   color: var(--secondary-text-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .item-example {
   display: block;
