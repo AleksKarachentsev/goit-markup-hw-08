@@ -131,6 +131,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-auth .item + .item {
   margin-left: 50px;
@@ -140,9 +141,22 @@ button {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current {
+  position: relative;
   color: var(--accent-color);
+}
+.link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 3.85px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -173,6 +187,7 @@ button {
 }
 .button.hero {
   padding: 10px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button {
   font-family: inherit;
@@ -219,6 +234,24 @@ button {
 .activity-img {
   display: flex;
   gap: 30px;
+}
+.activitys {
+  position: relative;
+}
+
+.actv-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  top: 224px;
 }
 .section-title,
 .activity-title,
@@ -296,6 +329,8 @@ button {
   color: var(--main-icon-color);
   border-radius: 50%;
   background-color: var(--background-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .scl-link {
   fill: currentColor;
@@ -319,6 +354,8 @@ button {
   border-radius: 4px;
   color: var(--main-icon-color);
   border: 1px solid var(--main-icon-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
   fill: currentColor;
@@ -349,9 +386,11 @@ button {
   font-size: 14px;
   line-height: 1.71;
   color: var(--footer-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link.map {
   color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -383,6 +422,7 @@ button {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-icon {
   fill: var(--secondary-text-color);
@@ -403,6 +443,42 @@ button {
 }
 .footer-adr {
   margin-right: 70px;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--background-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button-close {
+  position: absolute;
+  top: 7px;
+  left: 490px;
+  background-color: var(--background-color);
 }
 /* Портфоліо */
 .filter {
@@ -427,6 +503,8 @@ button {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--buttons-port-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 50ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first {
   border: none;
@@ -441,11 +519,36 @@ button {
 }
 .item-example {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-example:hover,
 .item-example:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.item-img:hover .overlay {
+  transform: translateY(0);
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 370px;
+  height: 294px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(294px);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .caption {
   border: 1px solid var(--line-color);
