@@ -365,7 +365,7 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter-form">
+        <form class="newsletter-form" autocomplete="on">
           <label for="user-email" class="title-links">Підпишіться на розсилку</label>
           <div class="input-button">
             <input
@@ -382,7 +382,7 @@
               </svg>
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -396,27 +396,29 @@
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <div class="input-form">
             <label class="form-title" for="user-name">Ім'я</label>
-            <input class="form-filed" type="text" name="name" id="user-name" autocomplete="on" />
-            <span class="icon-form"
-              ><svg class="input-form-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-person"></use></svg
-            ></span>
+            <input
+              class="form-filed"
+              type="text"
+              name="name"
+              id="user-name"
+              autocomplete="on"
+            /><svg class="input-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
           </div>
           <div class="input-form">
             <label class="form-title" for="user-phone">Телефон</label>
             <input class="form-filed" type="tel" name="tel" id="user-phone" autocomplete="on" />
-            <span class="icon-form"
-              ><svg class="input-form-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-phone"></use></svg
-            ></span>
+            <svg class="input-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
           </div>
           <div class="input-form">
             <label class="form-title" for="user-mail">Пошта</label>
             <input class="form-filed" type="email" name="email" id="user-mail" autocomplete="on" />
-            <span class="icon-form"
-              ><svg class="input-form-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#icon-email"></use></svg
-            ></span>
+            <svg class="input-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
           </div>
           <div class="input-textarea">
             <label class="form-title" for="user-name">Коментар</label>
