@@ -392,7 +392,7 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="modal-form">
+        <form class="modal-form">
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
           <div class="input-form">
             <label class="form-title" for="user-name">Ім'я</label>
@@ -402,20 +402,35 @@
               name="name"
               id="user-name"
               autocomplete="on"
+              required
             /><svg class="input-form-icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
           <div class="input-form">
             <label class="form-title" for="user-phone">Телефон</label>
-            <input class="form-filed" type="tel" name="tel" id="user-phone" autocomplete="on" />
+            <input
+              class="form-filed"
+              type="tel"
+              name="tel"
+              id="user-phone"
+              autocomplete="on"
+              required
+            />
             <svg class="input-form-icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
           <div class="input-form">
             <label class="form-title" for="user-mail">Пошта</label>
-            <input class="form-filed" type="email" name="email" id="user-mail" autocomplete="on" />
+            <input
+              class="form-filed"
+              type="email"
+              name="email"
+              id="user-mail"
+              autocomplete="on"
+              required
+            />
             <svg class="input-form-icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
@@ -432,14 +447,14 @@
           </div>
           <div class="checkbox">
             <label class="checkbox-title">
-              <input class="form-checkbox" type="checkbox" />
+              <input class="form-checkbox" type="checkbox" required />
               <span class="checkbox-icon"></span>
               Погоджуюся з розсилкою та приймаю
               <span><a href="" class="checkbox-link">Умови договору</a></span>
             </label>
           </div>
           <button class="modal-button" type="submit">Відправити</button>
-        </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
