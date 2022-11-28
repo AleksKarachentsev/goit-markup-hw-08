@@ -1,0 +1,41 @@
+@import '../utils/vars';
+@import '../base/base';
+
+/* Activity */
+.section-activitys {
+  &__content {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__image-caption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $thirdly-text-color;
+    background-color: $background-caption-color;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+  }
+}

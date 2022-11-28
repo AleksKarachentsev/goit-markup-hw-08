@@ -1,0 +1,76 @@
+@import '../utils/vars';
+@import '../base/base';
+
+/* Team */
+
+.section-team {
+  background-color: $background-team-color;
+  &__content {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+}
+
+.team {
+  display: flex;
+  gap: 30px;
+  &__member-card {
+    background-color: $background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__photo-caption {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__member-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+  &__member-profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  &__member-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: $main-icon-color;
+    border-radius: 50%;
+    background-color: $background-color;
+    transition: background-color $transition-timing-function, color $transition-timing-function;
+  }
+  &__social-link:focus,
+  &__social-link:hover {
+    color: $background-color;
+    background-color: $accent-color;
+  }
+  &__social-link-icon {
+    fill: currentColor;
+  }
+}

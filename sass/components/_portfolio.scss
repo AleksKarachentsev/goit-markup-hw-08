@@ -1,0 +1,100 @@
+@import '../utils/vars';
+@import '../base/base';
+
+/* portfolio */
+
+.portfolio {
+  &__content {
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__item {
+    margin-right: 8px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+  &__filter-button {
+    border: none;
+    padding: 6px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    background-color: $buttons-port-color;
+    transition: background-color $transition-timing-function, box-shadow $transition-timing-function,
+      color $transition-timing-function;
+  }
+  &__filter-button:hover,
+  &__filter-button:focus {
+    color: $thirdly-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__example {
+    display: block;
+    transition: box-shadow $transition-timing-function;
+  }
+  &__example:hover,
+  &__example:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &__example:hover .portfolio__overlay,
+  &__example:focus .portfolio__overlay {
+    transform: translateY(0);
+  }
+  &__img-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  &__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 370px;
+    height: 294px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $thirdly-text-color;
+    background-color: $background-color-overlay;
+    transform: translateY(294px);
+    transition: transform $transition-timing-function;
+  }
+  &__caption {
+    border: 1px solid $line-color;
+    padding: 24px 20px;
+  }
+  &__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $secondary-text-color;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: $primary-text-color;
+  }
+}
