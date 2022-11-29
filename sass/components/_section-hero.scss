@@ -1,5 +1,4 @@
 @import '../utils/vars';
-@import '../base/base';
 
 /* Section Hero */
 
@@ -7,7 +6,7 @@
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-    url(../../images/hero_bg.jpg);
+    url(../images/hero_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
