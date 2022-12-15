@@ -13,26 +13,26 @@
   margin: 0 auto;
   background-color: $background-hero-color;
   background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-    url(../../images/hero/mobile_hero_bg@1x.jpg);
+    url(./images/hero/mobile_hero_bg@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero-section {
       background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-        url(../../images/hero/mobile_hero_bg@2x.jpg);
+        url(./images/hero/mobile_hero_bg@2x.jpg);
     }
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-      url(../../images/hero/teblet_hero_bg@1x.jpg);
+      url(./images/hero/teblet_hero_bg@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .hero-section {
         background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-          url(../../images/hero/teblet_hero_bg@2x.jpg);
+          url(./images/hero/teblet_hero_bg@2x.jpg);
       }
     }
   }
@@ -41,14 +41,14 @@
     padding-bottom: 200px;
     height: 600px;
     background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-      url(../../images/hero/desktop_hero_bg@1x.jpg);
+      url(./images/hero/desktop_hero_bg@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .hero-section {
         background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-          url(../../images/hero/desktop_hero_bg@2x.jpg);
+          url(./images/hero/desktop_hero_bg@2x.jpg);
       }
     }
   }
