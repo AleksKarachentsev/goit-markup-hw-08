@@ -3,6 +3,10 @@
 /* Activity */
 .section-activitys {
   padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   &__content {
     width: 1200px;
     padding: 0 15px;

@@ -20,18 +20,23 @@
   <body>
     <header class="page-header">
       <div class="page-header__content">
+         <a href="./index.html" class="page-header__logo"
+            ><span class="page-header__part-of-logo">Web</span>Studio</a>
+        <button class="menu-toggle js-open-menu" type="button" aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40px" , height="40px">
+            <use class="menu-toggle__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+            <svg >
+        </button>
         <nav class="site-nav">
-          <a href="./index.html" class="site-nav__logo"
-            ><span class="site-nav__part-of-logo">Web</span>Studio</a
-          >
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
-            </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+            </li class="site-nav__item">
+            <li><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="site-auth">
@@ -83,9 +88,15 @@
                     приватну особу.
                   </p>
                   <img
-                    src="./images/portfolio-img-1.jpg"
-                    alt="відкритий ноутбук з веб-сайтом "
-                    width="370"
+                   srcset="
+									./images/portfolio/technokryak480.jpg 450w,
+									./images/portfolio/technokryak480@2x.jpg 900w,
+									./images/portfolio/technokryak768.jpg 354w,
+									./images/portfolio/technokryak768@2x.jpg 708w,
+									./images/portfolio/technokryak1200.jpg 370w,
+									./images/portfolio/technokryak1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/technokryak480.jpg" alt="відкритий ноутбук з веб-сайтом" loading="lazy"
                   />
                 </div>
                 <div class="portfolio__caption">
@@ -103,9 +114,15 @@
                     приватну особу.
                   </p>
                   <img
-                    src="./images/portfolio-img-2.jpg"
-                    alt="постер з двома бескетболістамі "
-                    width="370"
+                    srcset="
+									./images/portfolio/poster480.jpg 450w,
+									./images/portfolio/poster480@2x.jpg 900w,
+									./images/portfolio/poster768.jpg 354w,
+									./images/portfolio/poster768@2x.jpg 708w,
+									./images/portfolio/poster1200.jpg 370w,
+									./images/portfolio/poster1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/poster480.jpg" alt="постер з двома бескетболістамі" loading="lazy"
                   />
                 </div>
                 <div class="portfolio__caption">
@@ -123,9 +140,15 @@
                     приватну особу.
                   </p>
                   <img
-                    src="./images/portfolio-img-3.jpg"
-                    alt="логотип морського ресторану"
-                    width="370"
+                    srcset="
+									./images/portfolio/restaurant480.jpg 450w,
+									./images/portfolio/restaurant480@2x.jpg 900w,
+									./images/portfolio/restaurant768.jpg 354w,
+									./images/portfolio/restaurant768@2x.jpg 708w,
+									./images/portfolio/restaurant1200.jpg 370w,
+									./images/portfolio/restaurant1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/restaurant480.jpg" alt="логотип морського ресторану" loading="lazy"
                   />
                 </div>
                 <div class="portfolio__caption">
@@ -142,7 +165,15 @@
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
-                  <img src="./images/portfolio-img-4.jpg" alt="навушники" width="370" />
+                  <img srcset="
+									./images/portfolio/prime480.jpg 450w,
+									./images/portfolio/prime480@2x.jpg 900w,
+									./images/portfolio/prime768.jpg 354w,
+									./images/portfolio/prime768@2x.jpg 708w,
+									./images/portfolio/prime1200.jpg 370w,
+									./images/portfolio/prime1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/prime480.jpg" alt="навушники" loading="lazy" />
                 </div>
                 <div class="portfolio__caption">
                   <h3 class="portfolio__title">Проєкт <span lang="en">Prime</span></h3>
@@ -159,9 +190,15 @@
                     приватну особу.
                   </p>
                   <img
-                    src="./images/portfolio-img-5.jpg"
-                    alt="дві подарункові коробки"
-                    width="370"
+                    srcset="
+									./images/portfolio/boxes480.jpg 450w,
+									./images/portfolio/boxes480@2x.jpg 900w,
+									./images/portfolio/boxes768.jpg 354w,
+									./images/portfolio/boxes768@2x.jpg 708w,
+									./images/portfolio/boxes1200.jpg 370w,
+									./images/portfolio/boxes1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/boxes480.jpg" alt="дві подарункові коробки" loading="lazy"
                   />
                 </div>
                 <div class="portfolio__caption">
@@ -179,9 +216,15 @@
                     приватну особу.
                   </p>
                   <img
-                    src="./images/portfolio-img-6.jpg"
-                    alt="монітор з відкритим веб-сайтом "
-                    width="370"
+                    srcset="
+									./images/portfolio/inspiration480.jpg 450w,
+									./images/portfolio/inspiration480@2x.jpg 900w,
+									./images/portfolio/inspiration768.jpg 354w,
+									./images/portfolio/inspiration768@2x.jpg 708w,
+									./images/portfolio/inspiration1200.jpg 370w,
+									./images/portfolio/inspiration1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/inspiration480.jpg" alt="монітор з відкритим веб-сайтом" loading="lazy"
                   />
                 </div>
                 <div class="portfolio__caption">
@@ -198,7 +241,15 @@
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
-                  <img src="./images/portfolio-img-7.jpg" alt="сторінка журнала " width="370" />
+                  <img srcset="
+									./images/portfolio/limited480.jpg 450w,
+									./images/portfolio/limited480@2x.jpg 900w,
+									./images/portfolio/limited768.jpg 354w,
+									./images/portfolio/limited768@2x.jpg 708w,
+									./images/portfolio/limited1200.jpg 370w,
+									./images/portfolio/limited1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/limited480.jpg" alt="сторінка журнала" loading="lazy" />
                 </div>
                 <div class="portfolio__caption">
                   <h3 class="portfolio__title">Видання <span lang="en">Limited Edition</span></h3>
@@ -214,7 +265,15 @@
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
-                  <img src="./images/portfolio-img-8.jpg" alt="бірка " width="370" />
+                  <img srcset="
+									./images/portfolio/lab480.jpg 450w,
+									./images/portfolio/lab480@2x.jpg 900w,
+									./images/portfolio/lab768.jpg 354w,
+									./images/portfolio/lab768@2x.jpg 708w,
+									./images/portfolio/lab1200.jpg 370w,
+									./images/portfolio/lab1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/lab480.jpg" alt="бірка" loading="lazy" />
                 </div>
                 <div class="portfolio__caption">
                   <h3 class="portfolio__title">Проєкт <span>LAB</span></h3>
@@ -231,9 +290,15 @@
                     приватну особу.
                   </p>
                   <img
-                    src="./images/portfolio-img-9.jpg"
-                    alt="відкритий ноутбук з додатком "
-                    width="370"
+                    srcset="
+									./images/portfolio/growing480.jpg 450w,
+									./images/portfolio/growing480@2x.jpg 900w,
+									./images/portfolio/growing768.jpg 354w,
+									./images/portfolio/growing768@2x.jpg 708w,
+									./images/portfolio/growing1200.jpg 370w,
+									./images/portfolio/growing1200@2x.jpg 740w"
+									sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+									src="./images/portfolio/growing480.jpg" alt="відкритий ноутбук з додатком" loading="lazy"
                   />
                 </div>
                 <div class="portfolio__caption">
@@ -246,8 +311,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+      <footer class="footer">
       <div class="footer__content">
+        <div class="footer__wrapper">
         <div class="footer__adr">
           <a href="./index.html" class="footer__site-logo"
             ><span class="footer__part-of-logo">Web</span>Studio</a
@@ -303,6 +369,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <form class="footer__newsletter-form" autocomplete="on">
           <label for="user-email" class="footer__label">Підпишіться на розсилку</label>
           <div class="footer__input-button">
@@ -324,5 +391,42 @@
         </form>
       </div>
     </footer>
+       <div class="menu-container js-menu-container" id="mobile-menu">
+		<button class="menu-toggle js-close-menu">
+			<svg width="40" height="40">
+				<use href="./images/icons.svg#icon-close_40px"></use>
+			</svg>
+		</button>
+		<div class="mobile-menu">
+			<nav class="mobile-nav">
+				<ul class="mobile-nav__list">
+					<li class="mobile-nav__item"><a class="mobile-nav__link"
+							href="./index.html">Студія</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакти</a></li>
+				</ul>
+			</nav>
+			<ul class="mobile-auth">
+				<li class="mobile-auth__item">
+					<a class="mobile-auth__link mobile-auth__link--accent-color" href="tel:+380961111111">
+						+38 096 111 11 11</a>
+				</li>
+				<li class="mobile-auth__item">
+					<a  href="mailto:info@devstudio.com" class="mobile-auth__link">
+						info@devstudio.com</a>
+				</li>
+			</ul>
+			<ul class="mobile-socials">
+				<li class="mobile-socials__item"><a href="https://instagram.com" class="mobile-socials__link">Instagram</a></li>
+				<li class="mobile-socials__item"><a href="https://twitter.com" class="mobile-socials__link">Twitter</a></li>
+				<li class="mobile-socials__item"><a href="https://facebook.com" class="mobile-socials__link">Facebook</a></li>
+				<li class="mobile-socials__item"><a href="https://linkedin.com" class="mobile-socials__link">LinkedIn</a></li>
+			</ul>
+		</div>
+	</div>
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+		integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+		crossorigin="anonymous"></script>
+	<script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -4,25 +4,56 @@
 
 .section-hero {
   max-width: 1600px;
-  height: 600px;
-  background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
-    url(../images/hero_bg.jpg);
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   margin: 0 auto;
   background-color: $background-hero-color;
+  background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
+    url(../../images/hero/mobile_hero_bg@1x.jpg);
 
-  &__content {
-    width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
+        url(../../images/hero/mobile_hero_bg@2x.jpg);
+    }
   }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
+      url(../../images/hero/teblet_hero_bg@1x.jpg);
 
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero-section {
+        background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
+          url(../../images/hero/teblet_hero_bg@2x.jpg);
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
+      url(../../images/hero/desktop_hero_bg@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero-section {
+        background-image: linear-gradient(to right, $linear-gradient, $linear-gradient),
+          url(../../images/hero/desktop_hero_bg@2x.jpg);
+      }
+    }
+  }
   &__title {
+    margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -31,6 +62,16 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $thirdly-text-color;
+
+    @media screen and (max-width: 1199px) {
+      max-width: 360px;
+      font-size: 26px;
+      line-height: 1.62;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 696px;
+    }
   }
 
   &__button {
@@ -42,6 +83,7 @@
     color: $thirdly-text-color;
     background-color: $accent-color;
     padding: 10px 32px;
+    min-width: 216px;
     transition: background-color $transition-timing-function;
   }
 
